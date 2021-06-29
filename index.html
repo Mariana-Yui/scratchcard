@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .card {
+        width: 375px;
+        height: 140px;
+        background: url('./award.jpg');
+        background-size: 375px 140px;
+      }
+      .card canvas {
+        width: 375px;
+        height: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 这里默认是retina2倍像素屏, 实际项目中可以通过判断window.devicePixelRatio判断 -->
+    <div class="card">
+      <canvas id="canvas" width="750" height="280"></canvas>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
